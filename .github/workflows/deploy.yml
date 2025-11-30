@@ -1,0 +1,114 @@
+name: Deploy to Server
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get version and create tag
+        id: version
+        run: |
+          LATEST_TAG=$(git tag -l "v*" | sort -V | tail -n 1)
+
+          if [ -z "$LATEST_TAG" ]; then
+            VERSION=1
+          else
+            VERSION=$(echo "$LATEST_TAG" | sed 's/v//')
+            VERSION=$((VERSION + 1))
+          fi
+
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "tag=v$VERSION" >> $GITHUB_OUTPUT
+
+          if [ "${{ github.ref }}" = "refs/heads/main" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git tag "v$VERSION"
+            git push origin "v$VERSION"
+            echo "Created and pushed tag v$VERSION"
+          fi
+
+      - name: Create version files
+        run: |
+          echo "${{ steps.version.outputs.version }}" > .version
+          git rev-parse HEAD > .commit
+
+      - name: Sync files to server
+        uses: burnett01/rsync-deployments@6.0.0
+        with:
+          switches: -avzr --delete --exclude='.git' --exclude='.env'
+          path: ./
+          remote_path: /var/www/rosy.shitchell.com/api/
+          remote_host: ${{ secrets.DEPLOY_HOST }}
+          remote_user: ${{ secrets.DEPLOY_USER }}
+          remote_key: ${{ secrets.DEPLOY_SSH_KEY }}
+          remote_port: ${{ secrets.DEPLOY_PORT || 22 }}
+
+      - name: Deploy .env and restart containers
+        uses: appleboy/ssh-action@v1.0.0
+        env:
+          ENV_CONTENT: ${{ secrets.ENV_FILE }}
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          port: ${{ secrets.DEPLOY_PORT || 22 }}
+          envs: ENV_CONTENT
+          script: |
+            set -e
+
+            PROJECT_DIR="/var/www/rosy.shitchell.com/api"
+            cd "$PROJECT_DIR"
+
+            echo "========================================="
+            echo "Starting deployment to $(hostname)"
+            echo "Version: $(cat .version 2>/dev/null || echo 'unknown')"
+            echo "========================================="
+
+            # Create .env file from secret if it doesn't exist
+            if [ ! -f ".env" ] && [ -n "$ENV_CONTENT" ]; then
+              echo "Creating .env from GitHub secret..."
+              echo "$ENV_CONTENT" > .env
+              chmod 600 .env
+            fi
+
+            # Pull latest images and restart
+            echo "Pulling latest images..."
+            docker compose pull
+
+            echo "Starting containers..."
+            docker compose up -d
+
+            # Wait for MariaDB to be ready
+            echo "Waiting for database to be ready..."
+            for i in {1..30}; do
+              if docker compose exec -T db mariadb -u root -p"${MYSQL_ROOT_PASSWORD:-changeme-root}" -e "SELECT 1" > /dev/null 2>&1; then
+                echo "✓ Database is ready"
+                break
+              fi
+              if [ $i -eq 30 ]; then
+                echo "✗ Database not ready after 30 attempts"
+                docker compose logs db
+                exit 1
+              fi
+              echo "Waiting for database (attempt $i/30)..."
+              sleep 2
+            done
+
+            echo "========================================="
+            echo "Deployment completed successfully!"
+            docker compose ps
+            echo "========================================="
