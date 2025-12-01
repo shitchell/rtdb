@@ -15,6 +15,7 @@ services:
       --max-connections=20
       --performance-schema=OFF
       --skip-log-bin
+      --local-infile=1
     restart: unless-stopped
     networks:
       - rosy-net

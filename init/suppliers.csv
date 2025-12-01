@@ -1,0 +1,9 @@
+id,name,reliability_score,lead_time_days
+1,TechSource Global,0.73,3
+2,Pacific Imports,0.75,7
+3,Mountain Supply Co,0.93,11
+4,Desert Distribution,0.7,2
+5,Coastal Trading,0.88,10
+6,Valley Wholesale,0.65,8
+7,Summit Logistics,0.63,6
+8,Harbor Goods,0.92,11

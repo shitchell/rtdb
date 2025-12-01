@@ -1,0 +1,49 @@
+id,sku,name,category,unit_cost,supplier_id
+1,SKU-ELE-0001,Wireless Headphones,Electronics,133.39,6
+2,SKU-ELE-0002,Bluetooth Speaker,Electronics,88.72,2
+3,SKU-ELE-0003,USB-C Cable,Electronics,11.64,4
+4,SKU-ELE-0004,Power Bank,Electronics,117.09,2
+5,SKU-ELE-0005,Smart Watch,Electronics,129.02,2
+6,SKU-ELE-0006,Tablet Stand,Electronics,60.12,8
+7,SKU-ELE-0007,Webcam,Electronics,97.17,6
+8,SKU-ELE-0008,Keyboard,Electronics,28.58,6
+9,SKU-APP-0009,Running Shoes,Apparel,35.38,5
+10,SKU-APP-0010,Winter Jacket,Apparel,106.76,2
+11,SKU-APP-0011,Cotton T-Shirt,Apparel,93.32,3
+12,SKU-APP-0012,Denim Jeans,Apparel,82.45,4
+13,SKU-APP-0013,Baseball Cap,Apparel,28.69,7
+14,SKU-APP-0014,Wool Sweater,Apparel,44.14,4
+15,SKU-APP-0015,Rain Coat,Apparel,104.27,1
+16,SKU-APP-0016,Sneakers,Apparel,38.21,1
+17,SKU-HOM-0017,LED Bulb Pack,Home & Garden,121.73,7
+18,SKU-HOM-0018,Garden Hose,Home & Garden,43.82,4
+19,SKU-HOM-0019,Tool Set,Home & Garden,137.4,6
+20,SKU-HOM-0020,Plant Pot,Home & Garden,35.83,8
+21,SKU-HOM-0021,Door Mat,Home & Garden,62.37,8
+22,SKU-HOM-0022,Shelf Unit,Home & Garden,25.72,3
+23,SKU-HOM-0023,Picture Frame,Home & Garden,40.76,5
+24,SKU-HOM-0024,Cushion Set,Home & Garden,113.32,7
+25,SKU-SPO-0025,Yoga Mat,Sports,135.18,7
+26,SKU-SPO-0026,Dumbbell Set,Sports,57.49,3
+27,SKU-SPO-0027,Tennis Racket,Sports,78.88,2
+28,SKU-SPO-0028,Basketball,Sports,114.59,2
+29,SKU-SPO-0029,Hiking Backpack,Sports,27.16,3
+30,SKU-SPO-0030,Water Bottle,Sports,119.85,7
+31,SKU-SPO-0031,Fitness Tracker,Sports,91.48,7
+32,SKU-SPO-0032,Jump Rope,Sports,60.33,8
+33,SKU-GRO-0033,Protein Bars,Grocery,81.72,1
+34,SKU-GRO-0034,Coffee Beans,Grocery,103.64,2
+35,SKU-GRO-0035,Olive Oil,Grocery,103.85,5
+36,SKU-GRO-0036,Rice Pack,Grocery,116.45,6
+37,SKU-GRO-0037,Pasta Box,Grocery,21.18,7
+38,SKU-GRO-0038,Cereal Box,Grocery,27.93,1
+39,SKU-GRO-0039,Snack Mix,Grocery,143.3,5
+40,SKU-GRO-0040,Tea Collection,Grocery,145.92,3
+41,SKU-HEA-0041,Shampoo,Health & Beauty,78.61,2
+42,SKU-HEA-0042,Sunscreen,Health & Beauty,131.23,5
+43,SKU-HEA-0043,Vitamins,Health & Beauty,127.04,4
+44,SKU-HEA-0044,Face Cream,Health & Beauty,27.16,3
+45,SKU-HEA-0045,Toothpaste,Health & Beauty,83.21,1
+46,SKU-HEA-0046,Hand Soap,Health & Beauty,91.85,8
+47,SKU-HEA-0047,Body Lotion,Health & Beauty,7.82,6
+48,SKU-HEA-0048,Hair Brush,Health & Beauty,132.41,5

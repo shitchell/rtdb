@@ -1,0 +1,201 @@
+id,name,region,segment
+1,Linda Johnson,Northern California,Consumer
+2,John Lee,Southern California,Corporate
+3,Robert Lee,Mountain West,Corporate
+4,William Wilson,Mountain West,Small Business
+5,Michael Moore,Northern California,Home Office
+6,Richard Wang,Southwest,Small Business
+7,Patricia Davis,Northern California,Consumer
+8,David Smith,Mountain West,Corporate
+9,Charles Davis,Southern California,Consumer
+10,Mohammed Johnson,Northern California,Consumer
+11,Ahmed Johnson,Pacific Northwest,Consumer
+12,Thomas Davis,Pacific Northwest,Small Business
+13,Michael Moore,Northern California,Small Business
+14,Linda Lee,Southwest,Corporate
+15,Patricia Brown,Southwest,Home Office
+16,Susan Patel,Southwest,Consumer
+17,Fatima Brown,Southern California,Small Business
+18,Priya Chen,Southern California,Corporate
+19,Michael Miller,Mountain West,Small Business
+20,Robert Patel,Northern California,Home Office
+21,Joseph Davis,Southern California,Small Business
+22,Maria Moore,Southern California,Consumer
+23,Wei Moore,Southern California,Consumer
+24,Sofia Davis,Northern California,Small Business
+25,Jessica Lee,Northern California,Small Business
+26,Ahmed Johnson,Northern California,Small Business
+27,James Kim,Pacific Northwest,Small Business
+28,Elizabeth Patel,Mountain West,Small Business
+29,Robert Miller,Pacific Northwest,Corporate
+30,Mary Taylor,Mountain West,Consumer
+31,Priya Chen,Southern California,Consumer
+32,Charles Lee,Mountain West,Corporate
+33,Mary Wilson,Southern California,Corporate
+34,John Anderson,Southern California,Corporate
+35,Richard Brown,Mountain West,Corporate
+36,Charles Anderson,Southern California,Consumer
+37,Susan Taylor,Mountain West,Home Office
+38,Sofia Rodriguez,Northern California,Home Office
+39,Linda Rodriguez,Southwest,Corporate
+40,Fatima Martinez,Southwest,Home Office
+41,Sofia Williams,Southern California,Small Business
+42,Karen Taylor,Southern California,Consumer
+43,Sarah Miller,Mountain West,Home Office
+44,Robert Wang,Southern California,Corporate
+45,Barbara Martinez,Northern California,Small Business
+46,Yuki Moore,Pacific Northwest,Consumer
+47,Fatima Moore,Pacific Northwest,Consumer
+48,Ahmed Jones,Pacific Northwest,Consumer
+49,Ahmed Brown,Mountain West,Corporate
+50,William Martinez,Mountain West,Corporate
+51,Mohammed Chen,Northern California,Home Office
+52,Thomas Lee,Pacific Northwest,Consumer
+53,John Patel,Pacific Northwest,Consumer
+54,James Chen,Northern California,Home Office
+55,Jennifer Singh,Mountain West,Small Business
+56,Sarah Smith,Southern California,Consumer
+57,Ahmed Jones,Mountain West,Consumer
+58,Yuki Wang,Mountain West,Corporate
+59,Susan Jones,Southern California,Home Office
+60,Barbara Johnson,Pacific Northwest,Corporate
+61,Fatima Davis,Southern California,Home Office
+62,Carlos Moore,Southwest,Corporate
+63,Sofia Davis,Northern California,Corporate
+64,Ahmed Patel,Southern California,Corporate
+65,Priya Chen,Southwest,Corporate
+66,William Garcia,Southern California,Small Business
+67,Olga Johnson,Southwest,Corporate
+68,Michael Singh,Pacific Northwest,Home Office
+69,Yuki Davis,Northern California,Consumer
+70,Fatima Miller,Southwest,Home Office
+71,William Williams,Pacific Northwest,Home Office
+72,Wei Wilson,Southwest,Home Office
+73,James Brown,Pacific Northwest,Corporate
+74,Charles Rodriguez,Southern California,Consumer
+75,Karen Patel,Pacific Northwest,Home Office
+76,Susan Anderson,Mountain West,Consumer
+77,Richard Taylor,Northern California,Home Office
+78,Mary Patel,Southern California,Corporate
+79,Barbara Patel,Southern California,Home Office
+80,Karen Chen,Southern California,Home Office
+81,Thomas Martinez,Southwest,Home Office
+82,Richard Martinez,Mountain West,Corporate
+83,Michael Patel,Southwest,Corporate
+84,Karen Taylor,Pacific Northwest,Small Business
+85,Sarah Smith,Pacific Northwest,Home Office
+86,Michael Patel,Mountain West,Home Office
+87,Joseph Singh,Southwest,Corporate
+88,Thomas Lee,Northern California,Consumer
+89,Elizabeth Wilson,Mountain West,Home Office
+90,John Davis,Pacific Northwest,Corporate
+91,Maria Miller,Northern California,Consumer
+92,Mary Davis,Southwest,Consumer
+93,Joseph Patel,Mountain West,Corporate
+94,Mohammed Kim,Southwest,Small Business
+95,Linda Jones,Southern California,Consumer
+96,Carlos Patel,Northern California,Corporate
+97,Maria Wilson,Southwest,Consumer
+98,Sarah Davis,Southern California,Small Business
+99,Robert Singh,Mountain West,Home Office
+100,Carlos Singh,Mountain West,Small Business
+101,Yuki Moore,Southwest,Corporate
+102,Priya Lee,Southwest,Home Office
+103,Carlos Davis,Pacific Northwest,Small Business
+104,Wei Davis,Pacific Northwest,Small Business
+105,John Martinez,Northern California,Home Office
+106,David Chen,Mountain West,Consumer
+107,Robert Jones,Northern California,Small Business
+108,Mohammed Jones,Northern California,Consumer
+109,Susan Patel,Pacific Northwest,Small Business
+110,Susan Johnson,Northern California,Small Business
+111,Richard Taylor,Southern California,Small Business
+112,Jessica Smith,Pacific Northwest,Home Office
+113,Carlos Kim,Southwest,Corporate
+114,Jessica Davis,Pacific Northwest,Small Business
+115,Jessica Smith,Southwest,Home Office
+116,Fatima Kim,Northern California,Small Business
+117,Sofia Jones,Mountain West,Consumer
+118,Sofia Kim,Mountain West,Consumer
+119,John Patel,Northern California,Small Business
+120,Jennifer Johnson,Pacific Northwest,Small Business
+121,David Miller,Southwest,Home Office
+122,David Kim,Pacific Northwest,Small Business
+123,William Williams,Southwest,Consumer
+124,Priya Moore,Southern California,Home Office
+125,Linda Williams,Southern California,Consumer
+126,Linda Miller,Southern California,Corporate
+127,Linda Jones,Southwest,Consumer
+128,Charles Miller,Southwest,Home Office
+129,Carlos Wang,Northern California,Consumer
+130,Carlos Garcia,Pacific Northwest,Consumer
+131,Charles Smith,Pacific Northwest,Small Business
+132,Richard Miller,Southern California,Corporate
+133,Patricia Martinez,Mountain West,Consumer
+134,Maria Taylor,Southern California,Home Office
+135,Sarah Patel,Pacific Northwest,Consumer
+136,Thomas Chen,Southern California,Small Business
+137,Yuki Lee,Southern California,Small Business
+138,Barbara Singh,Northern California,Small Business
+139,Jennifer Wilson,Pacific Northwest,Small Business
+140,Joseph Patel,Mountain West,Home Office
+141,David Davis,Southern California,Home Office
+142,Ahmed Singh,Northern California,Small Business
+143,Charles Anderson,Southwest,Home Office
+144,James Lee,Pacific Northwest,Corporate
+145,Jessica Miller,Pacific Northwest,Home Office
+146,David Rodriguez,Mountain West,Home Office
+147,Sarah Smith,Mountain West,Corporate
+148,John Davis,Southwest,Small Business
+149,Sarah Davis,Southwest,Small Business
+150,Joseph Smith,Southern California,Home Office
+151,Linda Kim,Northern California,Home Office
+152,Fatima Taylor,Pacific Northwest,Small Business
+153,Sarah Wilson,Pacific Northwest,Small Business
+154,Priya Moore,Pacific Northwest,Home Office
+155,Mohammed Singh,Pacific Northwest,Home Office
+156,William Davis,Southern California,Corporate
+157,David Brown,Mountain West,Corporate
+158,Michael Miller,Southwest,Home Office
+159,Priya Taylor,Mountain West,Home Office
+160,Patricia Miller,Pacific Northwest,Corporate
+161,Barbara Garcia,Pacific Northwest,Consumer
+162,Mohammed Moore,Northern California,Home Office
+163,Mary Johnson,Mountain West,Home Office
+164,Mohammed Jones,Southwest,Consumer
+165,Olga Smith,Mountain West,Home Office
+166,Jessica Lee,Southwest,Home Office
+167,Jennifer Johnson,Pacific Northwest,Small Business
+168,Patricia Williams,Southwest,Small Business
+169,John Taylor,Southern California,Corporate
+170,Robert Taylor,Pacific Northwest,Consumer
+171,Linda Brown,Mountain West,Small Business
+172,Karen Anderson,Mountain West,Corporate
+173,Carlos Wilson,Southwest,Small Business
+174,Sofia Singh,Pacific Northwest,Small Business
+175,Elizabeth Taylor,Mountain West,Consumer
+176,Karen Brown,Northern California,Corporate
+177,William Williams,Northern California,Corporate
+178,Jennifer Moore,Southern California,Corporate
+179,James Patel,Southwest,Small Business
+180,Elizabeth Johnson,Northern California,Home Office
+181,Mohammed Martinez,Southwest,Consumer
+182,Fatima Davis,Pacific Northwest,Corporate
+183,Susan Brown,Mountain West,Corporate
+184,Wei Jones,Pacific Northwest,Corporate
+185,John Johnson,Northern California,Home Office
+186,Karen Taylor,Pacific Northwest,Small Business
+187,Patricia Singh,Pacific Northwest,Small Business
+188,William Wilson,Mountain West,Small Business
+189,Joseph Williams,Mountain West,Consumer
+190,Ahmed Patel,Pacific Northwest,Home Office
+191,James Williams,Northern California,Consumer
+192,Carlos Rodriguez,Mountain West,Consumer
+193,Carlos Garcia,Southwest,Small Business
+194,Sofia Rodriguez,Northern California,Small Business
+195,Wei Lee,Southern California,Small Business
+196,Barbara Patel,Pacific Northwest,Home Office
+197,Fatima Brown,Northern California,Home Office
+198,Susan Lee,Pacific Northwest,Small Business
+199,Yuki Moore,Southern California,Small Business
+200,John Chen,Pacific Northwest,Home Office
