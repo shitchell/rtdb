@@ -59,7 +59,7 @@ jobs:
 
       - name: Sync files to server
         run: |
-          rsync -avzr --delete --exclude='.git' --exclude='.env' \
+          rsync -avzr --delete --exclude='.git' --exclude='.env' --chmod=D2775,F664 \
             ./ deploy:/var/www/rosy.shitchell.com/srv/api/
 
       - name: Deploy .env and restart containers
